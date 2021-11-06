@@ -1,0 +1,50 @@
+/* Beberapa cara mengambil elemen html untuk di styling di css */
+
+/* 1.
+  Bisa mengambil elemen html itu sendiri.
+  Select elemen main di html, namun untuk cara ini apabila digunakan pada elemen div
+  maka semua elemen div akan mempunyai background biru semua.
+*/
+main {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+}
+
+/* 2.
+  Memberikan class atau id pada elemen html
+  Untuk class sendiri ditandai dengan titik lalu nama class (.class) agar spesifik digunakan untuk elemen tersebut
+  dan untuk class sendiri bisa digunakan kembali.
+  Untuk penggunaan id sendiri ditandai dengan tanda pagar/sharp/hastag #id dan penggunaan id sendiri
+  digunakan secara spesifik agar unik dan hanya bisa digunakan untuk 1 nama atribut sendiri dikarenakan
+  id sendiri adalah unik.
+*/
+.main {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+}
+
+#paragraph {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+/* 3.
+  Kemudian apabila ingin memberikan styling elemen didalam elemen bisa memanggilnya dengan select elemen child lalu elemen parent.
+*/
+div div {
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
+}
+
+/* 4.
+  Untuk selanjutnya menggunakan selector kemudian elemen html
+*/
+#satu h1 {
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
+}

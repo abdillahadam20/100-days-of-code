@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar HTML</title>
+</head>
+<body>
+
+  <!-- Contoh penggunaan WIA-ARIA -->
+  
+  <!-- Berikut mengandung Semantic Elemen HTML5 yang dimana sudah mengandung WIA-ARIA sendiri -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Untuk penggunaan tidak dengan Semantic ELemen HTML5 -->
+  <div role="header" class="header">
+    <div class="nav" role="navigation">
+      <input type="text" name="nama" aria-label="nama" required>
+      <button type="button" aria-label="tutup">x</button>
+    </div>
+  </div>
+
+  <!-- 
+    Sumber referensi dari file ini ada di
+    https://github.com/isatrio/aria
+    W3School https://www.w3schools.com/html/default.asp
+    https://developers.google.com/web/fundamentals/accessibility/semantics-aria
+    https://www.w3.org/TR/html-aria/
+  -->
+
+  <!-- Berikut beberapa contoh elemen yang baru di html5 -->
+
+  <!-- Di dalam html5 bisa digunkana sebagai pengganti div untuk 
+    bagian header yang berisi naavigasi menu, pencarian (search), 
+    dan juga bisa digunakan untuk menaruh logo website 
+  -->
+  <!-- <header></header> -->
+  <!-- nav menu digunakan untuk membungkus elemen yang akan 
+    di gunakan untuk membuat navigasi menu menggantikan yang 
+    biasa digunakan yaitu <div class="nav"> 
+  -->
+  <!-- <nav></nav> -->
+  <!-- Merepresentasikan isi sebuah dokumen seperti artikel, profile card dan sebagainya -->
+  <!-- <main></main> -->
+  <!-- Bisa digunakan untuk membuat sebuah komponen yang berisikan 
+    informasi di dalam sebuah website, contoh seperti website berita 
+    yang memuat 1 isi berita dari mulai judul dan isinya
+  -->
+  <!-- <article></article> -->
+  <!-- Apabila ingin membuat komponen yang bersebelahan di dalam website, bisa menggunakan elemen html5 berikut -->
+  <!-- <aside></aside> -->
+  <!-- Biasanya untuk footer pada developer menggunakan <div class="footer">, 
+    namun untuk di html5 sendiri sekarang sudah tersedia elemen footer untuk 
+    digunakan sebagai penutup html yang berisikan navigasi konten yang berada di dalam website 
+  -->
+  <!-- <footer></footer> -->
+  <!-- Sebelumnya untuk membuat button bisa 
+    menggunakan input dengan typenya button namun 
+    sekarang sudah mempunyai elemen button tersendiri 
+  -->
+  <!-- <button></button> -->
+
+  <!-- <div role="Tombol">Button</div> -->
+
+  <!-- 
+    WAI-ARIA atau
+    (Web Accessibility Initiative's Accessible Rich Internet Applications specification)
+  -->
+
+  <!-- 
+    Aria adalah polifil
+    Polifil sendiri adalah kode untuk mengimplementasikan fitur dalam peramban yang belum mendukung fitur tersebut. 
+  -->
+  <!--
+    role.
+    Attribut role sendiri digunakan untuk memberitahukan teman-teman penyandang difabilitas bahwa mereka sedang mengakses elemen tertentu.
+    Untuk contoh dibawah ini menunjukan bahwa elemen nav adalah navigasi menu
+  -->
+  <!-- <nav role="navigation-menu">
+    <ul>
+      <li>Hellow</li>
+    </ul>
+  </nav> -->
+  <!-- 
+    properties 
+  -->
+  <!-- <button aria-label="tutup">x</button>
+  <button aria-label="screen reader only label"></button>
+  <div role="scrollbar" aria-controls="main"></div> -->
+  <!-- states -->
+  <!-- <button aria-disabled="true">Tutup</button> -->
+
+  <!-- 
+    Aria-label
+  -->
+  <!-- <button arial-label="tutup">X</button>
+  <input id="name" name="name" aria-label="nama" required> -->
+
+  <!-- Aria-live -->
+  <!-- <div aria-live="off"></div>
+  <div aria-live="polite"></div>
+  <div aria-live="assertive"></div> -->
+
+  <!-- Aria-required -->
+  <!-- <input aria-required="true" required> -->
+
+  <!-- Aria-hidden -->
+  <!-- <div aria-hidden="true"></div> -->
+
+  <!-- tab-index-->
+  <!-- <div tabindex="0">Hai</div>
+  <div tabindex="-1"></div> -->
+
+  <!-- lang -->
+  <!-- <button>Tutup</button>
+  <button lang="en">Close</button> -->
+
+</body>
+</html>
