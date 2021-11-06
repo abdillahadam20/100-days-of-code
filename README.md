@@ -1,0 +1,1 @@
+Hai, perkenalkan nama saya Adam Abdillah. Saya memulai tantangan #100daysofcode dan juga ini juga sebagai dokumentasi kode yang telah saya buat karena sebelumnya saya belom mendokumentasikan kode-kode yang telah saya pelajari dan saya buat.
